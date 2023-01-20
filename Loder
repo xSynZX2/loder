@@ -1,0 +1,7 @@
+local gamelist = {
+    [994732206] = "https://github.com/Mirahub1/boxfruit/blob/main/Mira%20hub",
+}
+local checkgame = gamelist[game.gameId]
+if gamelist[game.gameId] then 
+    loadstring(game:HttpGet(checkgame))()
+end
